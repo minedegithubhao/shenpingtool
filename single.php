@@ -25,7 +25,7 @@
 		</div><!-- .entry .post -->
 	<?php endwhile; ?>
 	<?php endif; ?>
-	<!-- <?php comment_form( ) ?> -->
+<!--	 --><?php //comments_template( ) ?>
 	</div><!-- .article -->
 
 	<?php get_sidebar()?>

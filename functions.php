@@ -6,15 +6,25 @@ register_sidebar( $args )
 所有可选的成员参数，都包含在下面的示例代码中。
 */
 register_sidebar( array(
-    'name'						=> '主侧边栏',					//侧边栏的名称
+    'name'						=> '网站右侧边栏',					//侧边栏的名称
     'id'						=> 'sidebar-1',					//侧边栏的编号
-    'description'				=> '用于网站右侧的主侧边栏',					//侧边栏的描述
+    'description'				=> '网站右侧边栏',					//侧边栏的描述
     'class'						=> '',
     'before_widget'			    => '<li id="%1$s" class="widget %2$s">',
     'after_widget'			    => '</li>',
     'before_title'				=> '<h3 class="widget-title">',
     'after_title'				=> '</h3>' 
   ) );
+register_sidebar( array(
+    'name'						=> '庙会赶集-右侧边栏',					//侧边栏的名称
+    'id'						=> 'sidebar-2',					//侧边栏的编号
+    'description'				=> '庙会赶集-右侧边栏',					//侧边栏的描述
+    'class'						=> '',
+    'before_widget'			    => '<li id="%1$s" class="widget %2$s">',
+    'after_widget'			    => '</li>',
+    'before_title'				=> '<h3 class="widget-title">',
+    'after_title'				=> '</h3>'
+) );
 
 /**
 * lingfeng_breadcrumbs()函数
