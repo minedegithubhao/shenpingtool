@@ -41,7 +41,9 @@
 	<!-- 在这里调用数据 -->
 	<?php endwhile; ?>
 		<?php lingfeng_pagenavi()?>
-	<?php endif; ?>
+    <?php else: ?>
+        没有相关内容
+    <?php endif; ?>
 	</div><!-- .article -->
 
 	<?php get_sidebar()?>				
