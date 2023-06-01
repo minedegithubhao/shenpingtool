@@ -261,6 +261,10 @@ ul, li {
 	margin:10px 0 0;
 }
 
+/*.entry-tag span{*/
+/*	margin: 0 10px;*/
+/*}*/
+
 .entry-tag a.more {
 	float:right;
 }
