@@ -250,7 +250,6 @@ ul, li {
 }
 
 .entry-cnt {
-	max-height:150px;
 	overflow:hidden;
 	font-size:14px;
 	line-height:25px;
