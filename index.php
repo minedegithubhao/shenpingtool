@@ -1,5 +1,4 @@
 <?php get_header() ?>
-
 	<div class="article">
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
@@ -14,15 +13,16 @@
 				<?php edit_post_link('编辑本文')?>
 			</div><!-- .entry-meta -->
 			<div class="entry-cnt">
+                <!--缩略图-->
 				<div class="entry-thumbnail">
 					<a href="<?php the_permalink()?>" >
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'thumbnail' ); ?>
 						<?php else: ?>
-							<img src="<?php echo get_template_directory_uri() ?>/images/suolue.jpg" />
+<!--							<img src="--><?php //echo get_template_directory_uri() ?><!--/images/suolue.jpg" />-->
 						<?php endif; ?>
 					</a>
-				</div><!-- entry-thumbnail -->
+				</div>
 				<div class="entry-arch">
 				<?php echo customize_strimwidth(get_the_content(),190,0)?>	
 				</div><!-- .entry-arch -->

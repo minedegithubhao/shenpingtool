@@ -1,5 +1,4 @@
 <?php get_header()?>
-
 	<div class="article">
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 	<?php setPostViews(get_the_ID())?>

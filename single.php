@@ -1,5 +1,4 @@
 <?php get_header()?>
-
 	<div class="article">
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 	<?php setPostViews(get_the_ID())?>
@@ -17,15 +16,16 @@
 					<?php the_content()?>
 				</div><!-- .entry-arch -->
 			</div><!-- .entry-cnt -->
-			<div class="related">
-				<span class="r-left"><?php next_post_link( '«上一篇：%link' )?></span>
-				<span class="r-right"><?php previous_post_link( '«下一篇：%link' )?></span>
-				<div class="clear"></div>
-			</div><!-- .related -->
+
 		</div><!-- .entry .post -->
 	<?php endwhile; ?>
 	<?php endif; ?>
-<!--	 --><?php //comments_template( ) ?>
+	 <?php comments_template( ) ?>
+        <div class="related">
+            <span class="r-left"><?php next_post_link( '«上一篇：%link' )?></span>
+            <span class="r-right"><?php previous_post_link( '«下一篇：%link' )?></span>
+            <div class="clear"></div>
+        </div>
 	</div><!-- .article -->
 
 	<?php get_sidebar()?>
